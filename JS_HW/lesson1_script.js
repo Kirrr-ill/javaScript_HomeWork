@@ -5,7 +5,7 @@
 
 
 
-const celsius = +prompt("Сколько градусов Цельсия?");
+const celsius = prompt("Сколько градусов Цельсия?");
 let fahrenheit = (9 / 5) * celsius + 32;
 
 alert(`Градусов С: ${celsius},
