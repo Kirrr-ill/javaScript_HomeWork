@@ -54,7 +54,7 @@ console.log((day <= 10)
 
 
 let num = +prompt('Введите число');
-console.log(`В числе ${num} 
+alert(`В числе ${num} 
 Сотен (${Math.trunc(num / 100) % 10}), 
 Десятков (${Math.trunc(num / 10) % 10}), 
 Единиц (${(num % 10)})`);
