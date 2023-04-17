@@ -1,0 +1,90 @@
+<input id="from" type="text">
+В инпуте написано: <span id="span"></span>
+
+<br>
+
+<button class="messageBtn">Показать блок</button>
+<div class="message">
+	Привет :)
+</div>
+
+<br>
+
+<form>
+	<label>
+		Первый инпут:
+		<input class="form-control" type="text">
+	</label>
+	<br>
+	<br>
+	<label>
+		Второй инпут:
+		<select class="form-control">
+			<option value=""></option>
+			<option value="1">Один</option>
+			<option value="2">Два</option>
+		</select>
+	</label>
+	<br>
+	<br>
+	<button>Отправить</button>
+</form>
+
+<script>
+	"use strict";
+
+
+	// 1. При изменении значения в input с id="from", значение содержащееся в нем должно моментально отображаться в span. То есть при печати в input'е тег span также должен меняться.
+	const spanText = () => {
+		const input = document.getElementById('from');
+		const span = document.querySelector('span');
+		span.innerText = input.value;
+	}
+	const input = document.getElementById('from');
+	input.addEventListener('input', spanText)
+
+
+
+	// 2. При клике на кнопку с классом messageBtn необходимо элементу с классом message:
+	// - добавить два класса: animate_animated и animate_fadeInLeftBig
+	// - поставить данному элементу стиль visibility в значение 'visible'.
+	const btn = document.querySelector('.messageBtn');
+	const message = document.querySelector('.message');
+	btn.addEventListener('click', function (e) {
+		message.classList.add('animate_animated', 'animate_fadeInLeftBig');
+		message.setAttribute('style', 'visibility: visible;');
+	});
+	// 3. Необходимо при отправке формы проверить, заполнены ли все поля в этой форме. Если какое-либо поле не заполнено, форма не должна отправляться, также должны быть подсвечены незаполненные поля (необходимо поставить класс error незаполненным полям). Как только пользователь начинает заполнять какое-либо поле, необходимо, при вводе в данное поле, произвести проверку:
+	// - Если поле пустое, необходимо данное поле подсветить (поставить класс error данному полю).
+	// - Если поле было чем-либо заполнено, подсветку (класс error) необходимо убрать.
+
+	// const form = document.querySelector('form-control');
+	// const button = document.querySelector('button');
+	// button.addEventListener('click', function (e) {
+	// 	if (form.value == ' ') {
+	// 		console.log('Hi');
+	// 	} else {
+	// 		console.log('object');
+	// 		e.preventDefault();
+	// 	}
+	// });
+
+	const form = document.querySelector("form");
+	const input2 = form.querySelectorAll("input, select");
+	form.addEventListener("submit", (e) => {
+		input2.forEach((elem) => {
+			if (!elem.value) {
+				elem.classList.add("error");
+				e.preventDefault();
+			}
+		});
+	});
+
+	form.addEventListener("input", (e) => {
+		if (e.target.classList.contains("form-control")) {
+			!e.target.value ? e.target.classList.add("error")
+				: e.target.classList.remove("error");
+
+		}
+	});
+</script>
