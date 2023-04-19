@@ -39,13 +39,13 @@ export const dataInfo = `[
 		"website": "kale.biz"
 		},
 	{
-		"id": 5,
-		"avatar": "https://cdn.icon-icons.com/icons2/3707/PNG/512/person_face_people_woman_female_icon_230010.png",
-		"name": "Chelsey Dietrich",
-		"username": "Kamren",
-		"email": "Lucio_Hettinger@annie.ca",
-		"phone": "(254)954-1289",
-		"website": "demarco.info"
+		"id": 8,
+		"avatar": "https://cdn.icon-icons.com/icons2/3707/PNG/512/male_man_person_face_people_icon_230015.png",
+		"name": "Nicholas Runolfsdottir",
+		"username": "Maxime_Nienow",
+		"email": "Sherwood@rosamond.me",
+		"phone": "586.493.6943 x140",
+		"website": "jacynthe.com"
 	},
 	{
 		"id": 6,
@@ -66,13 +66,13 @@ export const dataInfo = `[
 		"website": "elvis.io"
 	},
 	{
-		"id": 8,
-		"avatar": "https://cdn.icon-icons.com/icons2/3707/PNG/512/male_man_person_face_people_icon_230015.png",
-		"name": "Nicholas Runolfsdottir",
-		"username": "Maxime_Nienow",
-		"email": "Sherwood@rosamond.me",
-		"phone": "586.493.6943 x140",
-		"website": "jacynthe.com"
+		"id": 5,
+		"avatar": "https://cdn.icon-icons.com/icons2/3707/PNG/512/person_face_people_woman_female_icon_230010.png",
+		"name": "Chelsey Dietrich",
+		"username": "Kamren",
+		"email": "Lucio_Hettinger@annie.ca",
+		"phone": "(254)954-1289",
+		"website": "demarco.info"
 	},
 	{
 		"id": 9,
