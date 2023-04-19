@@ -8,9 +8,12 @@ data.forEach(({ avatar, name, username, id, email, phone, website }) => {
 	const div = document.createElement('div');
 	div.classList.add('user-card');
 
-	const ava = document.createElement('img');
+	const ava = document.createElement('div');
 	ava.classList.add('avatar');
-	ava.src = avatar;
+
+	const userImg = document.createElement('img');
+	userImg.classList.add('user-img');
+	userImg.src = avatar;
 
 	const cardInfo = document.createElement('div');
 	cardInfo.classList.add('card-info');
@@ -47,6 +50,7 @@ data.forEach(({ avatar, name, username, id, email, phone, website }) => {
 	cardInfo.appendChild(userWeb);
 
 	div.append(ava);
+	ava.append(userImg);
 	div.append(cardInfo);
 
 

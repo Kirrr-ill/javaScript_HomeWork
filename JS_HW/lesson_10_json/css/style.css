@@ -44,12 +44,20 @@ header {
   display: flex;
 }
 .avatar {
-  padding: 5px;
   width: 85px;
   height: 85px;
   margin: 0 20px;
+}
+.user-img {
+  width: 85px;
+  height: 85px;
   background-color: #fff5ec;
   border-radius: 15px;
+}
+.user-img:hover {
+  width: 150px;
+  height: 150px;
+  position: absolute;
 }
 .card-info {
   margin: 0 20px 0 0;

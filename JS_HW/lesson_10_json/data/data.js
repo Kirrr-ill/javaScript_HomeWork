@@ -68,7 +68,7 @@ export const dataInfo = `[
 	{
 		"id": 8,
 		"avatar": "https://cdn.icon-icons.com/icons2/3707/PNG/512/male_man_person_face_people_icon_230015.png",
-		"name": "Nicholas Runolfsdottir V",
+		"name": "Nicholas Runolfsdottir",
 		"username": "Maxime_Nienow",
 		"email": "Sherwood@rosamond.me",
 		"phone": "586.493.6943 x140",
