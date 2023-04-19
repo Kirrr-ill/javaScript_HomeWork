@@ -37,7 +37,7 @@ data.forEach(({ avatar, name, username, id, email, phone, website }) => {
 	userPhone.textContent = `Phone: ${phone}`;
 
 	const userWeb = document.createElement('p')
-	userWeb.classList.add('user-email');
+	userWeb.classList.add('user-website');
 	userWeb.textContent = `Web: ${website}`;
 
 	cardInfo.appendChild(userId);

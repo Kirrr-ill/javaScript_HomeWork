@@ -58,6 +58,7 @@ header {
   width: 150px;
   height: 150px;
   position: absolute;
+  box-shadow: 1px 1px 10px rgb(9, 10, 8);
 }
 .card-info {
   padding-left: 8px;
