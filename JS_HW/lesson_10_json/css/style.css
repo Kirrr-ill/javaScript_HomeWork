@@ -60,6 +60,8 @@ header {
 }
 .card-info {
   margin: 0 20px 0 0;
+  padding-left: 8px;
+  border-left: 2px solid #fff;
 }
 .userId {
   color: blueviolet;
@@ -74,6 +76,6 @@ header {
 .footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #4448bb;
+  background-color: #3a3d9f;
   color: bisque;
 }
