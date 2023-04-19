@@ -2,7 +2,6 @@ import { dataInfo } from "../data/data.js";
 const content = document.querySelector('.cards');
 
 const data = JSON.parse(dataInfo);
-console.log(data);
 
 data.forEach(({ avatar, name, username, id, email, phone, website }) => {
 	const div = document.createElement('div');
