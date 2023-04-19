@@ -24,6 +24,7 @@ header {
 .header-link {
   margin: 0 auto 10px;
   font-size: larger;
+  text-align: center;
 }
 .header-txt {
   margin: 20px auto 10px;
