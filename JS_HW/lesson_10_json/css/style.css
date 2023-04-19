@@ -17,17 +17,15 @@ header {
   width: 100%;
   background-color: #4448bb;
   color: aliceblue;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.header-link {
-  margin: 0 auto 10px;
-  font-size: larger;
+  padding: 10px 0;
   text-align: center;
 }
+.header-link {
+  margin: 0 0 10px 0;
+  font-size: larger;
+}
 .header-txt {
-  margin: 20px auto 10px;
+  margin: 0 0 10px 0;
 }
 .cards {
   margin: 0 10%;
