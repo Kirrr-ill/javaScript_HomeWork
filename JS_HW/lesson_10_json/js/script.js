@@ -1,8 +1,8 @@
 import { dataInfo } from "../data/data.js";
 const content = document.querySelector('.cards');
-const data = JSON.parse(dataInfo);
+const userCards = JSON.parse(dataInfo);
 
-data.forEach(({ avatar, name, username, id, email, phone, website }) => {
+userCards.forEach(({ avatar, name, username, id, email, phone, website }) => {
 	const div = document.createElement('div');
 	div.classList.add('user-card');
 
@@ -30,15 +30,32 @@ data.forEach(({ avatar, name, username, id, email, phone, website }) => {
 
 	const userEmail = document.createElement('p')
 	userEmail.classList.add('user-email');
-	userEmail.textContent = `E-mail: ${email}`;
+	userEmail.textContent = `E-mail: `;
+
+	const userEmailLink = document.createElement('a');
+	userEmailLink.classList.add('user-email-link')
+	userEmailLink.textContent = email;
+	userEmailLink.setAttribute('href', `mailto:${email}`);
+
 
 	const userPhone = document.createElement('p')
 	userPhone.classList.add('user-phone');
-	userPhone.textContent = `Phone: ${phone}`;
+	userPhone.textContent = `Phone: `;
+
+	const userPhoneLink = document.createElement('a');
+	userPhoneLink.classList.add('user-phone-link')
+	userPhoneLink.textContent = phone
+	userPhoneLink.setAttribute('tel', `tel:${phone}`);
 
 	const userWeb = document.createElement('p')
 	userWeb.classList.add('user-website');
-	userWeb.textContent = `Web: ${website}`;
+	userWeb.textContent = 'Web: ';
+
+	const userWebLink = document.createElement('a');
+	userWebLink.classList.add('user-web-link')
+	userWebLink.textContent = website
+	userWebLink.setAttribute('href', `http://${website}`);
+	userWebLink.setAttribute('target', '_blank');
 
 	cardInfo.appendChild(userId);
 	cardInfo.appendChild(nicName);
@@ -47,10 +64,13 @@ data.forEach(({ avatar, name, username, id, email, phone, website }) => {
 	cardInfo.appendChild(userPhone);
 	cardInfo.appendChild(userWeb);
 
+	userEmail.append(userEmailLink);
+	userPhone.append(userPhoneLink);
+	userWeb.append(userWebLink);
+
 	div.append(ava);
 	ava.append(userImg);
 	div.append(cardInfo);
-
 
 	content.appendChild(div);
 });

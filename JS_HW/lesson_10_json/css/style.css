@@ -5,13 +5,17 @@
 body {
   font: 14px sans-serif;
 }
-a {
+header a {
   font-weight: bolder;
   color: bisque;
   text-decoration: none;
 }
+
 a:hover {
   opacity: 0.6;
+}
+.user-card a {
+  color: black;
 }
 header {
   width: 100%;
@@ -64,6 +68,14 @@ header {
   padding-left: 8px;
   border-left: 2px solid #fff;
 }
+.card-info p {
+  font-weight: 500;
+  font-style: italic;
+}
+.card-info a {
+  font-weight: normal;
+  font-style: normal;
+}
 .userId {
   color: blueviolet;
   margin-bottom: 4px;
@@ -73,6 +85,10 @@ header {
 }
 .user-nic-name {
   text-decoration: underline;
+}
+
+.user-email-link {
+  text-transform: lowercase;
 }
 .footer {
   font-size: smaller;
